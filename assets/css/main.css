@@ -2720,28 +2720,28 @@ section {
 }
 .cta1 {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-carousel/6.jpg) fixed center center;
-  background-size: cover;
   padding: 60px 0;
   height: 375px;
+  background-size: cover;
   -o-background-size: fixed;
   -moz-background-size: cover;
   -ms-backgorund-size: cover;
 }
 .cta2 {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-carousel/3.jpg) fixed center center;
-  background-size: cover;
   padding: 60px 0;
   height: 375px;
+  background-size: cover;
   -o-background-size: fixed;
   -moz-background-size: cover;
   -ms-backgorund-size: cover;
 }
 .cta3 {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-carousel/1.jpg) fixed center center;
-  background-size: cover;
   padding: 60px 0;
   height: 375px;
-  -o-background-size: fixed;
+  background-size: cover;
+  -o-background-size: cover;
   -moz-background-size: cover;
   -ms-backgorund-size: cover;
 }
