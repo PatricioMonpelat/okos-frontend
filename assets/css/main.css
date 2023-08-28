@@ -178,7 +178,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #2e3135;
+  background: var(  --color-secondary);
   color: var( --color-white);
 }
 
