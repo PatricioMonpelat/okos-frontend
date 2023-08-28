@@ -2748,3 +2748,25 @@ section {
   padding: 60px 0;
   height: 375px;
 }
+.container2 {
+  width: 100%;
+  max-width: max-content;
+}
+/*--------------------------------------------------------------
+# Clients swiper
+--------------------------------------------------------------*/
+.clients {
+  padding-top: 20px;
+}
+
+ .page-header .swiper-slide img {
+  /* opacity: 0.5; */
+  margin-top: 40px;
+  transition: 0.3s;
+  /* filter: grayscale(100); */
+}
+
+.page-header .swiper-slide img:hover {
+  filter: grayscale(100);
+  opacity: 1;
+}
