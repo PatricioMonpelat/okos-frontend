@@ -2725,7 +2725,7 @@ section {
   -o-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
-  -webkit-background-size: cover;
+  -webkit-background-size: fixed;
   padding: 60px 0;
   height: 375px;
 }
