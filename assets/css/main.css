@@ -2726,6 +2726,7 @@ section {
   -moz-background-size: cover;
   -ms-background-size: cover;
   -webkit-background-size: auto;
+  background-attachment: fixed;
   padding: 60px 0;
   height: 375px;
 }
