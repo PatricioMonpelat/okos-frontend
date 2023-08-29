@@ -2707,18 +2707,6 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-secondary) ; 
 }
-.wasap {
-  position: fixed;
-  left: 30px;
-  bottom: 20px;
-  height: 60px;
-  width: 60px;
-  z-index: 10000;
-  visibility: visible;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-iteration-count: 100;
-}
 .cta1 {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-carousel/6.jpg) fixed center center;
   background-size: cover;
@@ -2782,4 +2770,35 @@ section {
 }
 .btnMas:hover{
   background: var(--color-secondary);
+}
+
+@keyframes tada {
+  0% {
+    transform: scale(1);
+  }
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+.wasap {
+  position: fixed;
+  left: 30px;
+  bottom: 20px;
+  height: 60px;
+  width: 60px;
+  z-index: 10000;
+  visibility: visible;
+  animation-name: tada;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 100;
 }
