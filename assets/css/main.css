@@ -920,7 +920,7 @@ section {
 @media (max-width: 575px) {
   .projects .portfolio-flters li {
     font-size: 14px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
   }
 }
 
