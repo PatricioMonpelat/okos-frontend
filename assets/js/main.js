@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to change header background color when scrolling
 function handleScroll() {
-    if (window.scrollY > 600) { // Adjust this value to trigger the color change at a specific scroll position
+    if (window.scrollY > 300) { // Adjust this value to trigger the color change at a specific scroll position
       header.classList.add('header-scroll');
       logoOriginal.style.display = 'none'; // Hide the original logo
       logoAlternate.style.display = 'block'; // Show the alternate logo
