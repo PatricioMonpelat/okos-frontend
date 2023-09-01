@@ -2801,3 +2801,7 @@ section {
   animation-delay: 0s;
   animation-iteration-count: 100;
 }
+.lang{
+  fill: rgba(255, 255, 255, 0.6);
+  margin-right: 5px;
+}
