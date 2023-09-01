@@ -388,7 +388,8 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: var(--color-primary);
+    color: var(--color-white);
+    background-color: var(--color-secondary);
   }
 
   .navbar .dropdown:hover>ul {
@@ -2804,4 +2805,8 @@ section {
 .lang{
   fill: rgba(255, 255, 255, 0.6);
   margin-right: 5px;
+}
+.flag{
+  height: auto;
+  width:30px;
 }
