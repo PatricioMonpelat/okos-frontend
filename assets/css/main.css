@@ -2708,7 +2708,7 @@ section {
   background: var(--color-secondary) ; 
 }
 .cta1 {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-carousel/6.jpg) fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/plano1.webp) fixed center center;
   -webkit-background-size: 100%; 
   -moz-background-size: 100%; 
   -o-background-size: 100%; 
@@ -2722,7 +2722,7 @@ section {
   height: 375px;
 }
 .cta2 {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/plano3.jpg) fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/plano3.webp) fixed center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -2732,7 +2732,7 @@ section {
   height: 375px;
 }
 .cta3 {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/plano2.jpg) fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/plano2.webp) fixed center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
