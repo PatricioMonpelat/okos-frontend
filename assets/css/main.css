@@ -2709,10 +2709,6 @@ section {
 }
 .cta1 {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/plano1.webp) fixed center center;
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%; 
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
