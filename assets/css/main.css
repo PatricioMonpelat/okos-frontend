@@ -115,13 +115,13 @@
 
 @keyframes color-change {
   0% {
-    background-color: #ff5733;
+    background-color: var(--color-default);
   }
   50% {
-    background-color: #33ff57;
+    background-color: var(--color-primary);
   }
   100% {
-    background-color: #ff5733;
+    background-color: var(--color-secondary);
   }
 }
 
