@@ -2841,15 +2841,15 @@ section {
 @supports (-webkit-touch-callout: none) {
   .cta1 {
       background: url('../img/img/plano1.webp') center top no-repeat scroll;
-      background-size: auto 350px;
+      background-size: auto 375px;
   }
   .cta2{
     background: url('../img/img/plano3.webp') center top no-repeat scroll;
-    background-size: auto 350px;
+    background-size: auto 375px;
   }
   .cta3{
     background: url('../img/img/plano2.webp') center top no-repeat scroll;
-    background-size: auto 350px;
+    background-size: auto 375px;
   }    
 }
 .container2 {
