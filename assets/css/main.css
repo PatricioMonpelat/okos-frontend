@@ -2837,6 +2837,21 @@ section {
   padding: 60px 0;
   height: 375px;
 }
+
+@supports (-webkit-touch-callout: none) {
+  .cta1 {
+      background: url('../img/img/plano1.webp') center top no-repeat scroll;
+      background-size: auto 350px;
+  }
+  .cta2{
+    background: url('../img/img/plano3.webp') center top no-repeat scroll;
+    background-size: auto 350px;
+  }
+  .cta3{
+    background: url('../img/img/plano2.webp') center top no-repeat scroll;
+    background-size: auto 350px;
+  }    
+}
 .container2 {
   width: 100%;
   max-width: max-content;
