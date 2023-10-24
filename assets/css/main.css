@@ -2743,6 +2743,9 @@ section {
   color: var( --color-white);
 }
 
+.footer .footer-content .footer-info p a:hover {
+color: var(--color-secondary);
+}
 .footer .footer-content .social-links a {
   font-size: 18px;
   display: inline-block;
