@@ -14,6 +14,7 @@
   --color-default: #003F60;
   --color-primary: #006193;
   --color-secondary: #00937B;
+  --color-alternative: #333;
   --color-white: #fff;
 }
 
@@ -190,12 +191,16 @@ section {
   text-align: center;
   padding-bottom: 70px;
 }
+.section-header h1 {
+  color:  var( --color-alternative);
+  font-family: "myfont";
+}
 
 .section-header h2 {
   font-size: 32px;
   font-weight: 700;
   position: relative;
-  color: #2e3135;
+  color: var( --color-alternative);
 }
 
 .section-header h2:before,
@@ -203,7 +208,7 @@ section {
   content: "";
   width: 50px;
   height: 2px;
-  background: var(--color-primary);
+  background: var(--color-alternative);
   display: inline-block;
 }
 
@@ -217,6 +222,7 @@ section {
 
 .section-header p {
   margin: 0 auto 0 auto;
+  color: #2e3135;
 }
 
 @media (min-width: 1199px) {
@@ -292,7 +298,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--color-primary);
+  background: var(--color-alternative);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -667,8 +673,8 @@ section {
 }
 
 .contact .content h3 {
-  font-size: 36px;
-  color: var(--color-secondary);
+  font-size: x-large;
+  color: var(--color-alternative);
   font-weight: 600;
   margin-bottom: 25px;
   padding-bottom: 25px;
@@ -681,7 +687,7 @@ section {
   display: block;
   width: 60px;
   height: 4px;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   left: 0;
   bottom: 0;
 }
@@ -707,6 +713,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: var(--color-alternative);
 }
 
 .contact .php-email-form p {
@@ -864,7 +871,7 @@ section {
 }
 
 .services .service-item h3 {
-  color: var(--color-default);
+  color: var(--color-alternative);
   font-weight: 700;
   margin: 0 0 20px 0;
   padding-bottom: 8px;
@@ -879,7 +886,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-  
+  color: var(--color-alternative);
 }
 
 .services .service-item .readmore {
@@ -910,7 +917,7 @@ section {
 .features .nav-link {
   padding: 15px 0;
   transition: 0.3s;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -939,13 +946,18 @@ section {
 }
 
 .features .nav-link:hover {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .features .nav-link.active {
-  color: var(--color-primary);
+  color: var( --color-alternative);
   background-color: transparent;
-  border-color: var(--color-primary);
+  border-color: var( --color-secondary);
+}
+.features .nav-link.active:hover {
+  color: var( --color-secondary);
+  background-color: transparent;
+  border-color: var( --color-alternative);
 }
 
 .features .tab-content {
@@ -958,6 +970,7 @@ section {
   position: relative;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  color: var(--color-alternative);
 }
 
 .features .tab-pane h3:after {
@@ -966,7 +979,7 @@ section {
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   left: 0;
   bottom: 0;
 }
@@ -978,6 +991,7 @@ section {
 
 .features .tab-pane ul li {
   padding-top: 10px;
+  color: var(--color-alternative);
 }
 
 .features .tab-pane ul i {
@@ -1007,21 +1021,28 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-alternative);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-alternative);
 }
 
-.projects .portfolio-flters li:hover,
+.projects .portfolio-flters li:hover{
+  color: var(--color-white);
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
 .projects .portfolio-flters li.filter-active {
-  color: white;
-  background: var(--color-default);
-  border: 2px solid #00937B;
+  color: var(--color-white);
+  background: var(--color-alternative);
+  border: 2px solid var(--color-alternative);
 }
-
+.projects .portfolio-flters li.filter-active:hover {
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
 .projects .portfolio-flters li:first-child {
   margin-left: 0;
 }
@@ -1869,7 +1890,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
+  background: var(--color-alternative);
   border: 0;
   padding: 10px 35px;
   color: var( --color-white);
@@ -1878,7 +1899,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #00937B;
+  background: var(--color-primary);
 }
 
 
@@ -2879,7 +2900,7 @@ section {
   opacity: 1;
 }
 .btnMas{
-  background: var(--color-primary);
+  background: var(--color-alternative);
             border: 0;
             padding: 10px 35px;
             color: var( --color-white);
@@ -2887,7 +2908,7 @@ section {
             border-radius: 5px;
 }
 .btnMas:hover{
-  background: var(--color-secondary);
+  background: var(--color-primary);
 }
 
 
