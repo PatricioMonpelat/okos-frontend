@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "myfont";
+  src: url("../fonts/DooM.woff") format('woff');
+}
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
