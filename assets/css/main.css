@@ -2904,11 +2904,12 @@ color: var(--color-secondary);
 }
 .btnMas{
   background: var(--color-alternative);
-            border: 0;
-            padding: 10px 35px;
-            color: var( --color-white);
-            transition: 0.4s;
-            border-radius: 5px;
+  border: 0;
+  padding: 10px 35px;
+  color: var( --color-white);
+  transition: 0.4s;
+  border-radius: 5px;
+  animation: bounce 2s infinite;
 }
 .btnMas:hover{
   background: var(--color-primary);
