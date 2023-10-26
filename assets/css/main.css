@@ -225,11 +225,11 @@ section {
   color: #2e3135;
 }
 
-@media (min-width: 1199px) {
+/* @media (min-width: 1199px) {
   .section-header p {
     max-width: 60%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
