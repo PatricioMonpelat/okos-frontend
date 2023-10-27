@@ -11,8 +11,9 @@
 
 /* Colors */
 :root {
-  --color-default: #003F60;
-  --color-primary: #006193;
+  --color-default: #055A90;
+  --color-primary: #055A90;
+  --color-okosBlue: #055A90;
   --color-secondary: #00937B;
   --color-alternative: #333;
   --color-white: #fff;
@@ -123,7 +124,7 @@
     background-color: var(--color-default);
   }
   50% {
-    background-color: var(--color-primary);
+    background-color: var(--color-okosBlue);
   }
   100% {
     background-color: var(--color-secondary);
@@ -157,7 +158,7 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
   text-decoration: none;
 }
 
@@ -265,7 +266,7 @@ section {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .breadcrumbs ol a {
@@ -329,24 +330,32 @@ section {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: #fff;
+  /* background: #fff; */
+  background: transparent; 
   transition: all 0.6s ease-out;
 }
 
-#preloader:before {
+/* #preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #fff;
-  border-color: var(--color-primary) transparent var(--color-primary) transparent;
+  border-color: var(--color-okosBlue) transparent var(--color-okosBlue) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   animation: animate-preloader 1.5s linear infinite;
+} */
+
+#preloader img {
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 60px; /* Set the width and height according to your image dimensions */
+  height: 60px;
+  animation: animate-preloader 4s linear infinite;
 }
-
-
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -383,7 +392,7 @@ section {
 }
 
 .header .logo h1 span {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .header-scroll {
@@ -460,7 +469,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-okosBlue);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -771,7 +780,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--color-primary);
+  border-color: var(--color-okosBlue);
 }
 
 .contact .php-email-form input {
@@ -783,7 +792,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   border: 0;
   padding: 10px 30px;
   color: var( --color-white);
@@ -892,15 +901,15 @@ section {
 .services .service-item .readmore {
   margin-top: 15px;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .services .service-item:hover .icon:before {
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
 }
 
 .services .service-item:hover h3 {
-  border-color: var(--color-primary);
+  border-color: var(--color-okosBlue);
 }
 .services .service-item:hover{
   transform: scale(1.1);
@@ -917,7 +926,7 @@ section {
 .features .nav-link {
   padding: 15px 0;
   transition: 0.3s;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -997,7 +1006,7 @@ section {
 .features .tab-pane ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .features .tab-pane p:last-child {
@@ -1031,7 +1040,7 @@ section {
 
 .projects .portfolio-flters li:hover{
   color: var(--color-white);
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   border: 2px solid var(--color-alternative);
 }
 .projects .portfolio-flters li.filter-active {
@@ -1040,8 +1049,8 @@ section {
   border: 2px solid var(--color-alternative);
 }
 .projects .portfolio-flters li.filter-active:hover {
-  background: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  background: var(--color-okosBlue);
+  border: 2px solid var(--color-okosBlue);
 }
 .projects .portfolio-flters li:first-child {
   margin-left: 0;
@@ -1084,7 +1093,7 @@ section {
   font-weight: 400;
   color: var( --color-white);
   display: inline-block;
-  background-color: var(--color-primary);
+  background-color: var(--color-okosBlue);
 }
 
 .projects .portfolio-content .portfolio-info p {
@@ -1112,7 +1121,7 @@ section {
 
 .projects .portfolio-content .portfolio-info .preview-link:hover,
 .projects .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .projects .portfolio-content .portfolio-info .details-link {
@@ -1220,7 +1229,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: var(--color-okosBlue);
 }
 
 @media (max-width: 767px) {
@@ -1269,7 +1278,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   left: 0;
   bottom: 0;
 }
@@ -1282,7 +1291,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
   margin-right: 25px;
   font-size: 28px;
   width: 56px;
@@ -1295,7 +1304,7 @@ section {
 }
 
 .empresa .icon-box:hover i {
-  background-color: var(--color-primary);
+  background-color: var(--color-okosBlue);
   color: var( --color-white);
 }
 
@@ -1311,7 +1320,7 @@ section {
 }
 
 .empresa .icon-box h4 a:hover {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .empresa .icon-box p {
@@ -1380,13 +1389,13 @@ section {
 .about ul i {
   font-size: 20px;
   margin-right: 4px;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .about .watch-video i {
   font-size: 32px;
   transition: 0.3s;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .about .watch-video a {
@@ -1397,7 +1406,7 @@ section {
 }
 
 .about .watch-video:hover a {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .about .about-img {
@@ -1427,7 +1436,7 @@ section {
   font-size: 42px;
   line-height: 0;
   margin-right: 20px;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .stats-counter .stats-item span {
@@ -1491,7 +1500,7 @@ section {
 }
 
 .team .member .member-img .social a:hover {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .team .member .member-info {
@@ -1546,7 +1555,7 @@ section {
 
 .services-cards ul li i {
   font-size: 16px;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
   margin-right: 6px;
 }
 
@@ -1565,7 +1574,7 @@ section {
 }
 
 .project-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: var(--color-okosBlue);
 }
 
 .project-details .swiper-button-prev,
@@ -1615,7 +1624,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   left: 0;
   bottom: 0;
 }
@@ -1641,7 +1650,7 @@ section {
 
 .project-details .portfolio-info .btn-visit {
   padding: 8px 40px;
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   color: var( --color-white);
   border-radius: 50px;
   transition: 0.3s;
@@ -1739,11 +1748,11 @@ section {
 
 .service-details .services-list a.active {
   font-weight: 700;
-  border-color: var(--color-primary);
+  border-color: var(--color-okosBlue);
 }
 
 .service-details .services-list a:hover {
-  border-color: var(--color-primary);
+  border-color: var(--color-okosBlue);
 }
 
 .service-details .services-img {
@@ -1779,7 +1788,7 @@ section {
 .service-details ul i {
   font-size: 20px;
   margin-right: 8px;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 /*--------------------------------------------------------------
@@ -1798,7 +1807,7 @@ section {
   height: 56px;
   font-size: 24px;
   line-height: 0;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
   border-radius: 50%;
   border: 2px dotted #ffd565;
 }
@@ -1878,7 +1887,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--color-primary);
+  border-color: var(--color-okosBlue);
 }
 
 .contact .php-email-form input {
@@ -1899,7 +1908,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
 }
 
 
@@ -1919,7 +1928,7 @@ section {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: var(--color-primary);
+  background-color: var(--color-okosBlue);
   color: var( --color-white);
   text-transform: uppercase;
   font-size: 13px;
@@ -1941,7 +1950,7 @@ section {
 
 .recent-blog-posts .post-item .meta i {
   font-size: 16px;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .recent-blog-posts .post-item .meta span {
@@ -1971,7 +1980,7 @@ section {
 
 .recent-blog-posts .post-item:hover .post-title,
 .recent-blog-posts .post-item:hover .readmore {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .recent-blog-posts .post-item:hover .post-img img {
@@ -2039,7 +2048,7 @@ section {
   display: block;
   width: 80px;
   height: 4px;
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   left: 0;
   right: 0;
   bottom: 0;
@@ -2068,11 +2077,11 @@ section {
   transition: 0.5s;
   margin: 10px;
   color: var( --color-white);
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-okosBlue);
 }
 
 .hero .info .btn-contact:hover {
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
 }
 
 .hero .carousel-control-prev {
@@ -2156,7 +2165,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   color: var( --color-white);
 }
 
@@ -2181,7 +2190,7 @@ section {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: var(--color-primary);
+  background-color: var(--color-okosBlue);
   color: var( --color-white);
   text-transform: uppercase;
   font-size: 13px;
@@ -2203,7 +2212,7 @@ section {
 
 .blog .posts-list .meta i {
   font-size: 16px;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .blog .posts-list .meta span {
@@ -2237,7 +2246,7 @@ section {
 
 .blog .posts-list .post-item:hover .post-title,
 .blog .posts-list .post-item:hover .readmore {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .blog .posts-list .post-item:hover .post-img img {
@@ -2300,7 +2309,7 @@ section {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: var(--color-primary);
+  background-color: var(--color-okosBlue);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -2327,7 +2336,7 @@ section {
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .blog .blog-details .meta-top a {
@@ -2339,7 +2348,7 @@ section {
 }
 
 .blog .blog-details .meta-top a:hover {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .blog .blog-details .meta-bottom {
@@ -2358,7 +2367,7 @@ section {
 }
 
 .blog .blog-details .meta-bottom a:hover {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .blog .blog-details .meta-bottom .cats {
@@ -2479,7 +2488,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   color: var(--color-secondary);
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2542,7 +2551,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .blog .sidebar .recent-posts time {
@@ -2577,8 +2586,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: var(--color-secondary);
-  border: 1px solid var(--color-primary);
-  background: var(--color-primary);
+  border: 1px solid var(--color-okosBlue);
+  background: var(--color-okosBlue);
 }
 
 .blog .sidebar .tags ul a span {
@@ -2623,7 +2632,7 @@ section {
 }
 
 .blog .comments .comment h5 a:hover {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .blog .comments .comment h5 .reply {
@@ -2696,7 +2705,7 @@ section {
 
 .blog .comments .reply-form .btn-primary:hover {
   color: var(--color-secondary);
-  background-color: var(--color-primary);
+  background-color: var(--color-okosBlue);
 }
 
 /*--------------------------------------------------------------
@@ -2732,7 +2741,7 @@ section {
 }
 
 .footer .footer-content .footer-info h3 span {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 .footer .footer-content .footer-info p {
@@ -2760,7 +2769,7 @@ color: var(--color-secondary);
 }
 
 .footer .footer-content .social-links a:hover {
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
   text-decoration: none;
 }
 
@@ -2813,7 +2822,7 @@ color: var(--color-secondary);
 }
 
 .footer .footer-legal .credits a {
-  color: var(--color-primary);
+  color: var(--color-okosBlue);
 }
 
 
@@ -2828,7 +2837,7 @@ color: var(--color-secondary);
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary); 
+  background: var(--color-okosBlue); 
   /* border-radius: 10px; */
 }
 /* Handle on hover */
@@ -2912,7 +2921,7 @@ color: var(--color-secondary);
   animation: bounce 2s infinite;
 }
 .btnMas:hover{
-  background: var(--color-primary);
+  background: var(--color-okosBlue);
 }
 
 
