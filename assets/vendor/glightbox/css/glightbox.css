@@ -408,12 +408,16 @@
 }
 
 .gloader {
-  height: 25px;
-  width: 25px;
+  height: 50px;
+  width: 50px;
   -webkit-animation: lightboxLoader 0.8s infinite linear;
   animation: lightboxLoader 0.8s infinite linear;
-  border: 2px solid #fff;
-  border-right-color: transparent;
+  
+  background: url('../../../img/img/gearblanco.png') center center no-repeat;
+  background-size: cover;
+
+  /* border: 2px solid #fff; */
+  /* border-right-color: transparent; */
   border-radius: 50%;
   position: absolute;
   display: block;
