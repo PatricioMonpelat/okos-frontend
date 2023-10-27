@@ -14,7 +14,7 @@
   --color-default: #055A90;
   --color-primary: #055A90;
   --color-okosBlue: #055A90;
-  --color-secondary: #00937B;
+  --color-secondary: #059080;
   --color-alternative: #333;
   --color-white: #fff;
 }
@@ -858,7 +858,7 @@ section {
 }
 
 .services .service-item .icon i {
-  color: var(--color-secondary);
+  color: var(--color-okosBlue);
   font-size: 40px;
   transition: ease-in-out 0.3s;
   z-index: 2;
@@ -905,11 +905,11 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: var(--color-okosBlue);
+  background: var(--color-secondary);
 }
 
 .services .service-item:hover h3 {
-  border-color: var(--color-okosBlue);
+  border-color: var(--color-secondary);
 }
 .services .service-item:hover{
   transform: scale(1.1);
