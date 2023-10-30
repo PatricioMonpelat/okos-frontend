@@ -1843,7 +1843,8 @@ section {
   background: #df1529;
   text-align: left;
   padding: 15px;
-  font-weight: 600;
+  font-weight: initial;
+  font-size: 10px;
 }
 
 .contact .php-email-form .error-message br+br {
