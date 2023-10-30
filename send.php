@@ -3,11 +3,11 @@ require 'PHPMailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
-$to = "info@strombit.com.ar"; 
+$to = "info@okos.com.ar"; 
 
-$nombre = $_POST['name2'];
-$email = $_POST['email2'];
-$mensaje = nl2br($_POST['message2']);
+$nombre = $_POST['name'];
+$email = $_POST['email'];
+$mensaje = nl2br($_POST['message']);
 
 if($nombre == '' || $email == '' || $mensaje == ''):
 	header("Location:index.html");
