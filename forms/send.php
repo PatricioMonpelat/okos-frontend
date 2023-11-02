@@ -1,11 +1,22 @@
 <?php
 
-require __DIR__ . '/PHPMailer/src/PHPMailer.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-use PHPMailer\src\PHPMailer;
-use PHPMailer\src\Exception;
+// require __DIR__ . "/PHPMailer/src/PHPMailer.php";
+// require __DIR__  '/PHPMailer/PHPMailerAutoload.php';
 
-$mail = new PHPMailer;
+require __DIR__ . "/PHPMailer/PHPMailer/Exception.php";
+require __DIR__ . "/PHPMailer/PHPMailer/PHPMailer.php";
+require __DIR__ . "/PHPMailer/PHPMailer/SMTP.php";
+
+// use PHPMailer\src\PHPMailer;
+// use PHPMailer\src\Exception;
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+$mail->CharSet = 'UTF-8';
 
 $to = "info@okos.com.ar"; // Change this to the recipient email address
 
@@ -16,19 +27,20 @@ $mensaje = nl2br($_POST['message']);
 if ($nombre == '' || $email == '' || $mensaje == '') {
     header("Location: index.html"); // Redirect if any required field is missing
 } else {
+    //Recipients
     $mail->setFrom($email, $nombre);
     $mail->addAddress($to);
+    
+    //Content
     $mail->isHTML(true);
     $mail->Subject = 'Contacto desde web';
     $mail->Body = '<strong>' . $nombre . '</strong> envió el siguiente mensaje: <br><p>' . $mensaje . '</p>';
-
-    $mail->CharSet = 'UTF-8';
-
-   try {
+    
+    try {
         $mail->send();
         echo 'Message sent successfully.';
     } catch (Exception $e) {
-        echo 'Message could not be sent. Error: ' . $mail->ErrorInfo;;
+        echo 'Message could not be sent. Error: ' . $mail->ErrorInfo;
     }
 }
 
