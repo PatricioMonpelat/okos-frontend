@@ -7,9 +7,9 @@ use PHPMailer\PHPMailer\Exception;
 // require __DIR__ . "/PHPMailer/src/PHPMailer.php";
 // require __DIR__  '/PHPMailer/PHPMailerAutoload.php';
 
-require __DIR__ . "/PHPMailer/PHPMailer/Exception.php";
-require __DIR__ . "/PHPMailer/PHPMailer/PHPMailer.php";
-require __DIR__ . "/PHPMailer/PHPMailer/SMTP.php";
+require '../PHPMailer/src/Exception.php';
+require '../PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/src/SMTP.php';
 
 // use PHPMailer\src\PHPMailer;
 // use PHPMailer\src\Exception;
