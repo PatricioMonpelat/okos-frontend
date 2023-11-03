@@ -2875,6 +2875,20 @@ color: var(--color-secondary);
   padding: 60px 0;
   height: 375px;
 }
+.cta4 {
+  background: linear-gradient(rgba(2, 2, 2, 0.356), rgba(0, 0, 0, 0.076)), white fixed center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -webkit-background-size: cover;
+  padding: 60px 0;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
 
 @supports (-webkit-touch-callout: none) {
   .cta1 {
@@ -2888,7 +2902,11 @@ color: var(--color-secondary);
   .cta3{
     background: url('../img/img/plano2.webp') center top no-repeat scroll;
     background-size: auto 375px;
-  }    
+  }
+  .cta4{
+    background: url('../img/img/logo.png') center top no-repeat scroll;
+    background-size: auto 375px;
+  }      
 }
 .container2 {
   width: 100%;
