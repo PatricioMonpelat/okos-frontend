@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Submission Success</title>
     <!-- You can add any CSS or styling here if needed -->
+        <!-- Vendor CSS Files -->
+        <link
+        href="assets/vendor/bootstrap/css/bootstrap.min.css"
+        rel="stylesheet" />
+      <link
+        href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+        rel="stylesheet" />
+      <link
+        href="assets/vendor/fontawesome-free/css/all.min.css"
+        rel="stylesheet" />
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+      <link
+        href="assets/vendor/glightbox/css/glightbox.min.css"
+        rel="stylesheet" />
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  
+      <!-- Template Main CSS File -->
+      <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 <body>
     <div style="text-align: center; padding: 50px;">
@@ -13,5 +31,71 @@
         <p>We will get back to you as soon as possible.</p>
         <a href="index.html">Go Back to Home</a>
     </div>
+
+    <section id="contact" class="contact section-bg">
+        <div class="container">
+          <div class="row justify-content-between gy-4">
+            <div class="col-lg-6 d-flex align-items-center" >
+              <div class="content">
+                <h3>
+                  Para obtener mayor información y asesoramiento sobre nuestros
+                  servicios no dude en escribirnos y nos pondremos en contacto a
+                  la brevedad.
+                </h3>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <form
+                action="forms/send.php"
+                method="POST"
+                class="php-email-form">
+                <h3>Mandanos un mensaje</h3>
+                <!-- <p>
+                  
+                </p> -->
+                <div class="row gy-3">
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Nombre / Empresa"
+                      required />
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email"
+                      required />
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Mensaje"
+                      required></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Cargando</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Mensaje Enviado satisfactoriamente. Gracias!
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
