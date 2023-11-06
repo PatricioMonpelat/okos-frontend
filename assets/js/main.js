@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  "use strict";
+  "use strict"; 
    /**
    * Clients Slider
    */
@@ -260,4 +260,46 @@ window.addEventListener('scroll', handleScroll);
     aos_init();
   });
 
+  /**
+   * FORM
+   */
+  var form = document.getElementById("my-form");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+
+    form.querySelector(".loading").classList.add("d-block");
+    form.querySelector(".error-message").classList.remove("d-block");
+    form.querySelector(".sent-message").classList.remove("d-block");
+
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        form.querySelector(".loading").classList.remove("d-block");
+        if (response.ok) {
+          form.querySelector(".sent-message").classList.add("d-block");
+          form.reset();
+        } else {
+          displayError(form, "Oops! There was a problem in your form");
+        }
+      })
+      .catch((error) => {
+        displayError(form, error);
+      });
+  }
+
+  form.addEventListener("submit", handleSubmit);
+
+  function displayError(thisForm, error) {
+    thisForm.querySelector(".loading").classList.remove("d-block");
+    thisForm.querySelector(".error-message").innerHTML = error;
+    thisForm.querySelector(".error-message").classList.add("d-block");
+  }
 });

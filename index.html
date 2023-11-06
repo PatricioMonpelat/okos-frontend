@@ -1,6 +1,5 @@
-<?php include "send.php"; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -1075,6 +1074,7 @@
 
             <div class="col-lg-5" data-aos="fade">
               <form
+                id="my-form"
                 action="https://formspree.io/f/mnqkrgdl"
                 method="POST"
                 class="php-email-form">
@@ -1117,7 +1117,8 @@
                       Mensaje Enviado satisfactoriamente. Gracias!
                     </div>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="my-form-button">Enviar</button>
+                    <p id="my-form-status"></p>
                   </div>
                 </div>
               </form>
