@@ -2876,7 +2876,7 @@ color: var(--color-secondary);
   height: 375px;
 }
 .cta4 {
-  background: linear-gradient(rgba(2, 2, 2, 0.356), rgba(0, 0, 0, 0.076)), white fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.356), #f5f6f7), white fixed center center;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -2904,7 +2904,7 @@ color: var(--color-secondary);
     background-size: auto 375px;
   }
   .cta4{
-    background: url('../img/img/logo.png') center top no-repeat scroll;
+    background: white center top no-repeat scroll;
     background-size: auto 375px;
   }      
 }
