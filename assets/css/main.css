@@ -2889,7 +2889,7 @@ color: var(--color-secondary);
   align-items: center;
   height: 40vh;
 }
-
+/* this is for ios not rendering well the background url */
 @supports (-webkit-touch-callout: none) {
   .cta1 {
       background: url('../img/img/plano1.webp') center top no-repeat scroll;
