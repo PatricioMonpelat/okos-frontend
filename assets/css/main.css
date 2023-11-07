@@ -954,6 +954,22 @@ section {
   }
 }
 
+@media (max-width: 376px) {
+  #whitespace1, #whitespace2 {
+      display: none !important;
+  }
+  .section {
+    padding: 0 !important;
+  }
+  .cta4{
+    padding: 0 !important;
+    height: 18vh !important;
+  }
+  .features{
+    padding: 0 !important;
+  }
+}
+
 .features .nav-link:hover {
   color: var(--color-secondary);
 }
@@ -2883,7 +2899,7 @@ color: var(--color-secondary);
   -ms-background-size: cover;
   -webkit-background-size: cover;
   padding: 60px 0;
-  height: 375px;
+  /* height: 375px; */
   display: flex;
   justify-content: center;
   align-items: center;
