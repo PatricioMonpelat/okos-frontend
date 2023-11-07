@@ -954,7 +954,7 @@ section {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 470px) {
   #whitespace1, #whitespace2 {
       display: none !important;
   }
