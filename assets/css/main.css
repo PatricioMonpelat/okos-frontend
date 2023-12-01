@@ -1,6 +1,7 @@
 @font-face {
   font-family: "myfont";
   src: url("../fonts/DooM.woff") format('woff');
+  font-display: swap; /* or another value that suits your needs */
 }
 /* Fonts */
 :root {
