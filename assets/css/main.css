@@ -159,12 +159,12 @@ body {
 }
 
 a {
-  color: var(--color-okosBlue);
+  color: var(--color-secondary);
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffc732;
+  color: var(--color-okosBlue); 
   text-decoration: none;
 }
 
@@ -2840,7 +2840,7 @@ color: var(--color-secondary);
 }
 
 .footer .footer-legal .credits a {
-  color: var(--color-okosBlue);
+  color: var(--color-white);
 }
 
 
