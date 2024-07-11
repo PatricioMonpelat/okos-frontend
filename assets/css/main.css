@@ -2842,11 +2842,11 @@ color: var(--color-okosBlue);
 .footer .footer-legal .credits {
   padding-top: 4px;
   font-size: 13px;
-  color: var( --color-white);
+  color: var(--color-okosBlue);
 }
 
 .footer .footer-legal .credits a {
-  color: var(--color-white);
+  color:var(--color-okosBlue);
 }
 
 
