@@ -43,6 +43,34 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  new Swiper(".service-slider", {
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: "auto",
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+
   /**
    * Preloader
    */

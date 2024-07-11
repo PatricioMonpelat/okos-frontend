@@ -17,6 +17,7 @@
   --color-okosBlue: #055A90;
   --color-secondary: #059080;
   --color-alternative: #333;
+  --color-okosGrey: #666666;
   --color-white: #fff;
 }
 
@@ -159,7 +160,7 @@ body {
 }
 
 a {
-  color: var(--color-secondary);
+  color: var(--color-okosBlue);
   text-decoration: none;
 }
 
@@ -186,7 +187,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f5f6f7;
+  background-color: white;
 }
 
 .section-header {
@@ -377,6 +378,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
+  background-color: white;
 }
 
 .header .logo img {
@@ -397,8 +399,7 @@ section {
 }
 
 .header-scroll {
-  background-color: #00010199;
-  height: 50px;
+  background-color: white;
 }
 
 .logo-image {
@@ -449,7 +450,7 @@ section {
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: black;
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -487,7 +488,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: var( --color-white);
+    color: black;
   }
 
   .navbar .dropdown ul {
@@ -586,7 +587,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--color-okosBlue);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -637,7 +638,7 @@ section {
 
   .mobile-nav-show {
     position: relative;
-    color: var( --color-white);
+    color: var( --color-okosBlue);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -685,7 +686,7 @@ section {
 .contact .content h3 {
   font-size: x-large;
   color: var(--color-alternative);
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 25px;
   padding-bottom: 25px;
   position: relative;
@@ -697,7 +698,7 @@ section {
   display: block;
   width: 60px;
   height: 4px;
-  background: var(--color-secondary);
+  background: var(--color-okosBlue);
   left: 0;
   bottom: 0;
 }
@@ -1846,7 +1847,7 @@ section {
 .contact .php-email-form {
   width: 100%;
   background: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.08); */
   padding: 30px;
 }
 
@@ -1910,14 +1911,18 @@ section {
 
 .contact .php-email-form input {
   height: 44px;
+  background-color:   #EAEAEA;
+  border-radius: 5px;
 }
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
+  background-color: #EAEAEA;
+  border-radius: 5px;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--color-alternative);
+  background: var(--color-okosBlue);
   border: 0;
   padding: 10px 35px;
   color: var( --color-white);
@@ -2018,6 +2023,7 @@ section {
   min-height: 100vh;
   padding: 80px 0;
   margin: 0;
+  margin-top: 150px;
   position: relative;
 }
 
@@ -2730,20 +2736,20 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var( --color-white);
-  background: url("../img/img/3dd.jpg") top center no-repeat;
+  color: var( --color-black);
+  background: var(--color-white);
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
 }
 
-.footer:before {
+/* .footer:before {
   content: "";
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   inset: 0;
-}
+} */
 
 .footer .footer-content .footer-info {
   margin-bottom: 30px;
@@ -2767,11 +2773,11 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: var(--font-primary);
-  color: var( --color-white);
+  color: var( --color-okosGrey);
 }
 
 .footer .footer-content .footer-info p a:hover {
-color: var(--color-secondary);
+color: var(--color-okosBlue);
 }
 .footer .footer-content .social-links a {
   font-size: 18px;
