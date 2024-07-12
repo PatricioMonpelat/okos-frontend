@@ -8,6 +8,7 @@
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
+  --font-regular: "Inter", sans-serif;
 }
 
 /* Colors */
@@ -154,7 +155,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-default);
+  font-family: var(--font-regular);
   color: var(--color-default);
   overflow-x: hidden;
 }
@@ -175,7 +176,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: var(--font-regular);
 }
 
 /*--------------------------------------------------------------
@@ -257,7 +258,7 @@ section {
   font-size: 56px;
   font-weight: 500;
   color: var( --color-white);
-  font-family: var(--font-secondary);
+  font-family: var(--font-regular);
 }
 
 .breadcrumbs ol {
@@ -391,7 +392,7 @@ section {
   font-weight: 700;
   color: var( --color-white);
   margin-bottom: 0;
-  font-family: var(--font-primary);
+  font-family: var(--font-regular);
 }
 
 .header .logo h1 span {
@@ -447,7 +448,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 0 3px;
-    font-family: var(--font-primary);
+    font-family: var(--font-regular);
     font-size: 16px;
     font-weight: 500;
     color: black;
@@ -598,7 +599,7 @@ section {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    font-family: var(--font-primary);
+    font-family: var(--font-regular);
     font-size: 15px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.7);
@@ -1357,7 +1358,7 @@ section {
 .about h2 {
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--font-secondary);
+  font-family: var(--font-regular);
   margin: 30px 0;
 }
 
@@ -1471,7 +1472,7 @@ section {
 .stats-counter .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--font-primary);
+  font-family: var(--font-regular);
   font-size: 14px;
 }
 
@@ -2095,7 +2096,7 @@ section {
 }
 
 .hero .info .btn-contact {
-  font-family: var(--font-primary);
+  font-family: var(--font-regular);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -2776,7 +2777,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: var(--font-primary);
+  font-family: var(--font-regular);
   color: var( --color-okosGrey);
 }
 
