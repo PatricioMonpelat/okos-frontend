@@ -951,6 +951,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   margin: 0;
+  color: var(--color-okosGrey);
 }
 
 @media (max-width: 575px) {
@@ -980,15 +981,15 @@ section {
 }
 
 .features .nav-link.active {
-  color: var( --color-alternative);
+  color: var( --color-okosBlue);
   background-color: transparent;
-  border-color: var( --color-secondary);
+  border-color: var( --color-okosBlue);
 }
-.features .nav-link.active:hover {
+/* .features .nav-link.active:hover {
   color: var( --color-secondary);
   background-color: transparent;
   border-color: var( --color-alternative);
-}
+} */
 
 .features .tab-content {
   margin-top: 30px;
@@ -1013,12 +1014,6 @@ section {
   left: 0;
   bottom: 0;
 } */
-
-@media only screen and (min-width: 768px) {
-
-
-
-}
 
 .features .tab-pane ul {
   list-style: none;
