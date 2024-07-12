@@ -923,6 +923,9 @@ section {
 --------------------------------------------------------------*/
 .features .nav-tabs {
   border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .features .nav-link {
@@ -1000,7 +1003,7 @@ section {
   color: var(--color-alternative);
 }
 
-.features .tab-pane h3:after {
+/* .features .tab-pane h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -1009,6 +1012,12 @@ section {
   background: var(--color-secondary);
   left: 0;
   bottom: 0;
+} */
+
+@media only screen and (min-width: 768px) {
+
+
+
 }
 
 .features .tab-pane ul {
