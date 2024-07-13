@@ -2946,15 +2946,16 @@ color: var(--color-okosBlue);
 .clients {
   padding-top: 20px;
 }
-
- .page-header .swiper-slide img {
+ .swiper-slide img {
   /* opacity: 0.5; */
-  margin-top: 40px;
   transition: 0.3s;
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
   /* filter: grayscale(100); */
 }
 
-.page-header .swiper-slide img:hover {
+ .swiper-slide img:hover {
   filter: grayscale(100);
   opacity: 1;
 }
