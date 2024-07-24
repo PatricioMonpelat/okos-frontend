@@ -202,7 +202,7 @@ section {
 
 .section-header h2 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: initial;
   position: relative;
   color: var( --color-alternative);
 }
@@ -548,6 +548,16 @@ section {
     left: 100%;
     visibility: visible;
   }
+
+  .mobile-nav-show,
+  .mobile-nav-hide {
+    display: none;
+  }
+
+  .otrosServ{
+    text-align: left; 
+    margin-left: 200px;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -557,14 +567,6 @@ section {
 
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
-  }
-}
-
-@media (min-width: 1280px) {
-
-  .mobile-nav-show,
-  .mobile-nav-hide {
-    display: none;
   }
 }
 
@@ -674,6 +676,12 @@ section {
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
     z-index: 9996;
+  }
+
+  .otrosServ{
+    font-weight: initial !important;
+    text-align: left; 
+    margin-left: 80px;
   }
 }
 
