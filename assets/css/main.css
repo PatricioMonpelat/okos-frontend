@@ -1000,9 +1000,6 @@ section {
   border-color: var( --color-alternative);
 } */
 
-.features .tab-content {
-  margin-top: 30px;
-}
 
 .features .tab-pane h3 {
   font-weight: 700;
