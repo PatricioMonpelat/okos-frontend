@@ -2956,8 +2956,9 @@ color: var(--color-okosBlue);
   transition: 0.3s;
   display: flex;
   align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
+  /* justify-content: center;  Centra horizontalmente  */
   /* filter: grayscale(100); */
+  object-fit: contain;
 }
 
  .swiper-slide img:hover {
