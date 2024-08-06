@@ -8,7 +8,7 @@
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
-  --font-regular: "Inter", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 /* Colors */
@@ -20,6 +20,7 @@
   --color-alternative: #333;
   --color-okosGrey: #666666;
   --color-white: #fff;
+  --color-black: #000000;
 }
 
 /* Smooth scroll behavior */
@@ -155,7 +156,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-regular);
+  font-family: var(--font-inter);
   color: var(--color-default);
   overflow-x: hidden;
 }
@@ -176,7 +177,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-regular);
+  font-family: var(--font-inter);
 }
 
 /*--------------------------------------------------------------
@@ -201,10 +202,13 @@ section {
 }
 
 .section-header h2 {
-  font-size: 32px;
-  font-weight: initial;
+  font-size: 35px;
+  font-weight: 500;
   position: relative;
-  color: var( --color-alternative);
+  color: var( --color-black);
+  font-family: var(--font-inter);
+  line-height: 42.36px;
+  text-align: center;
 }
 
 /* .section-header h2:before,
@@ -258,7 +262,7 @@ section {
   font-size: 56px;
   font-weight: 500;
   color: var( --color-white);
-  font-family: var(--font-regular);
+  font-family: var(--font-inter);
 }
 
 .breadcrumbs ol {
@@ -392,7 +396,7 @@ section {
   font-weight: 700;
   color: var( --color-white);
   margin-bottom: 0;
-  font-family: var(--font-regular);
+  font-family: var(--font-inter);
 }
 
 .header .logo h1 span {
@@ -415,6 +419,10 @@ section {
 .logo-alternate {
   display: none;
   height: 50px;
+}
+.logo-image-footer{
+  width: 380px;
+  height: auto;
 }
 
 /*--------------------------------------------------------------
@@ -448,8 +456,8 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 0 3px;
-    font-family: var(--font-regular);
-    font-size: 16px;
+    font-family: var(--font-inter);
+    font-size: 20px;
     font-weight: 500;
     color: black;
     text-transform: uppercase;
@@ -556,7 +564,6 @@ section {
 
   .otrosServ{
     text-align: left; 
-    margin-left: 200px;
   }
 }
 
@@ -601,7 +608,7 @@ section {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    font-family: var(--font-regular);
+    font-family: var(--font-inter);
     font-size: 15px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.7);
@@ -679,9 +686,8 @@ section {
   }
 
   .otrosServ{
-    font-weight: initial !important;
-    text-align: left; 
-    margin-left: 80px;
+    margin-left: 30px;
+    text-align: left !important;
   }
 }
 
@@ -693,9 +699,11 @@ section {
 }
 
 .contact .content h3 {
-  font-size: x-large;
-  color: var(--color-alternative);
-  font-weight: 300;
+  padding-left: 30px;
+  font-size: 35px;
+  color: var(--color-okosGrey);
+  line-height: 42.36px;
+  font-weight: 500;
   margin-bottom: 25px;
   padding-bottom: 25px;
   position: relative;
@@ -710,6 +718,7 @@ section {
   background: var(--color-okosBlue);
   left: 0;
   bottom: 0;
+  margin-left: 30px;
 }
 
 .contact .content p {
@@ -854,7 +863,15 @@ section {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
+.cardTxt{
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24.2px;
+  text-align: center;
+}
+
+/* .services .service-item {
   padding: 40px;
   background: #fff;
   height: 100%;
@@ -926,7 +943,7 @@ section {
   transform: scale(1.1);
   box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
-}
+} */
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -938,9 +955,8 @@ section {
 }
 
 .features .nav-link {
-  padding: 15px 0;
   transition: 0.3s;
-  color: var(--color-okosBlue);
+  color: var(--color-black);
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -957,10 +973,13 @@ section {
 }
 
 .features .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 500;
   margin: 0;
+  line-height: 42.36px;
+  font-family: var(--font-inter);
   color: var(--color-okosGrey);
+  text-align: center;
 }
 
 @media (max-width: 575px) {
@@ -970,9 +989,6 @@ section {
 }
 
 @media (max-width: 470px) {
-  #whitespace1, #whitespace2 {
-      display: none !important;
-  }
   .section {
     padding: 0 !important;
   }
@@ -993,6 +1009,8 @@ section {
   color: var( --color-okosBlue);
   background-color: transparent;
   border-color: var( --color-okosBlue);
+  font-weight: bold;
+  color: var(--color-black);
 }
 /* .features .nav-link.active:hover {
   color: var( --color-secondary);
@@ -1001,14 +1019,14 @@ section {
 } */
 
 
-.features .tab-pane h3 {
-  font-weight: 700;
-  font-size: 32px;
+/* .features .tab-pane h3 {
+  font-weight: 500;
+  font-size: 30px;
   position: relative;
   margin-bottom: 20px;
   padding-bottom: 20px;
   color: var(--color-alternative);
-}
+} */
 
 /* .features .tab-pane h3:after {
   content: "";
@@ -1021,7 +1039,7 @@ section {
   bottom: 0;
 } */
 
-.features .tab-pane ul {
+/* .features .tab-pane ul {
   list-style: none;
   padding: 0;
 }
@@ -1035,10 +1053,15 @@ section {
   font-size: 20px;
   padding-right: 4px;
   color: var(--color-okosBlue);
-}
+} */
 
 .features .tab-pane p:last-child {
   margin-bottom: 0;
+  padding-top: 15px;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36.31px;
 }
 
 /*--------------------------------------------------------------
@@ -1363,7 +1386,7 @@ section {
 .about h2 {
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--font-regular);
+  font-family: var(--font-inter);
   margin: 30px 0;
 }
 
@@ -1477,7 +1500,7 @@ section {
 .stats-counter .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--font-regular);
+  font-family: var(--font-inter);
   font-size: 14px;
 }
 
@@ -1911,7 +1934,11 @@ section {
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  font-family: var(--font-inter);
+
 }
 
 .contact .php-email-form input:focus,
@@ -1921,7 +1948,7 @@ section {
 
 .contact .php-email-form input {
   height: 44px;
-  background-color:   #EAEAEA;
+  background-color: #EAEAEA;
   border-radius: 5px;
 }
 
@@ -1937,7 +1964,8 @@ section {
   padding: 10px 35px;
   color: var( --color-white);
   transition: 0.4s;
-  border-radius: 5px;
+  border-radius: 12px;
+  width: 190px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -2101,7 +2129,7 @@ section {
 }
 
 .hero .info .btn-contact {
-  font-family: var(--font-regular);
+  font-family: var(--font-inter);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -2779,11 +2807,13 @@ section {
 }
 
 .footer .footer-content .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 18.5px;
   margin-bottom: 0;
-  font-family: var(--font-regular);
+  font-weight: 500;
+  font-family: var(--font-inter);
   color: var( --color-okosGrey);
+  text-align: center;
 }
 
 .footer .footer-content .footer-info p a:hover {
@@ -2847,6 +2877,7 @@ color: var(--color-okosBlue);
 .footer .footer-legal .copyright {
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-okosGrey);
 }
 
 .footer .footer-legal .credits {
@@ -2856,7 +2887,7 @@ color: var(--color-okosBlue);
 }
 
 .footer .footer-legal .credits a {
-  color:var(--color-okosBlue);
+  color:var(--color-okosGrey);
 }
 
 
