@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Allow: /public/
+Disallow: /private-directory/
+Allow: /
 Sitemap: https://www.okos.com.ar/sitemap.xml
