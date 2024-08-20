@@ -175,17 +175,16 @@ h5,
 h6 {
   font-family: var(--font-inter);
 }
-
+#main{
+  background-color: #f5f5f5;
+}
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
-section[id]{
-  scroll-margin-top: 133px !important;
-}
-
 section {
   padding: 80px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  scroll-margin-top: 133px !important;
 }
 
 .section-bg {
@@ -947,6 +946,11 @@ section {
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.features{
+  background-color: #f5f5f5;
+  padding: 0 !important;
+  
+}
 .features .nav-tabs {
   border: 0;
   display: flex;
@@ -998,9 +1002,6 @@ section {
   .cta4{
     padding: 0 !important;
     height: 18vh !important;
-  }
-  .features{
-    padding: 0 !important;
   }
 }
 
@@ -1612,11 +1613,14 @@ section {
   color: var(--color-okosBlue);
   margin-right: 6px;
 }
+.servicios, .proyectos, .integramos-automatismos{
+  background-color: white;
+}
 
 /*--------------------------------------------------------------
 # Projet Details Section
 --------------------------------------------------------------*/
-.project-details .portfolio-details-slider img {
+/* .project-details .portfolio-details-slider img {
   width: 100%;
 }
 
@@ -1779,12 +1783,13 @@ section {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
-}
+} */
+
 
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .services-list {
+/* .service-details .services-list {
   padding: 10px 30px;
   border: 1px solid #d5d7da;
   margin-bottom: 20px;
@@ -1843,7 +1848,7 @@ section {
   font-size: 20px;
   margin-right: 8px;
   color: var(--color-okosBlue);
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -2057,6 +2062,7 @@ section {
 .hero {
   overflow-x: hidden;
   padding: 0;
+  background-color: white;
 }
 
 .hero .carousel {
