@@ -432,10 +432,18 @@ section {
   top: 0;
   left: 0;
   right: 0;
+  transition: padding 0.3s var(--ease);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  transition: box-shadow 0.3s var(--ease), padding 0.3s var(--ease), background-color 0.3s var(--ease);
+  transition: background-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
 
 .header .logo img {
@@ -456,9 +464,12 @@ section {
 }
 
 .header-scroll {
+  padding: 12px 0;
+}
+
+.header-scroll::before {
   background-color: rgba(255, 255, 255, 0.96);
   box-shadow: var(--shadow-sm);
-  padding: 12px 0;
 }
 
 .logo-image {
@@ -618,9 +629,6 @@ section {
     display: none;
   }
 
-  .otrosServ{
-    text-align: left; 
-  }
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -746,11 +754,6 @@ section {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: 9996;
-  }
-
-  .otrosServ{
-    margin-left: 30px;
-    text-align: left !important;
   }
 }
 
@@ -3117,23 +3120,49 @@ color: var(--color-okosBlue);
 }
 
 
-/* scrollbar custom */
-::-webkit-scrollbar {
-  width: 8px;
+/*--------------------------------------------------------------
+# Scrollbar
+--------------------------------------------------------------*/
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-okosBlue) transparent;
 }
-/* Track */
-::-webkit-scrollbar-track {
-  background: white;
 
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
 }
-/* Handle */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 ::-webkit-scrollbar-thumb {
-  background: var(--color-okosBlue); 
-  /* border-radius: 10px; */
+  background-color: var(--color-okosBlue);
+  background-image: var(--gradient-brand);
+  border-radius: var(--radius-pill);
+  border: 3px solid var(--color-surface-alt);
+  background-clip: padding-box;
+  transition: border-color 0.25s var(--ease);
 }
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-secondary) ; 
+  border-color: var(--color-surface);
+  filter: brightness(1.08);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  html {
+    scrollbar-width: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 .cta1 {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img/plano1.webp) fixed center center;
@@ -3208,9 +3237,28 @@ color: var(--color-okosBlue);
 .clients {
   padding-top: 20px;
 }
+.project-slider .swiper-slide,
+.clients-slider .swiper-slide {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .project-slider .swiper-slide,
+  .clients-slider .swiper-slide {
+    height: 80px;
+  }
+}
+
 .project-slider .swiper-slide img,
 .clients-slider .swiper-slide img {
   transition: filter 0.3s var(--ease), opacity 0.3s var(--ease), transform 0.3s var(--ease);
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.65;
