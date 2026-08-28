@@ -1,98 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission Success</title>
-    <!-- You can add any CSS or styling here if needed -->
-        <!-- Vendor CSS Files -->
-        <link
-        href="assets/vendor/bootstrap/css/bootstrap.min.css"
-        rel="stylesheet" />
-      <link
-        href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-        rel="stylesheet" />
-      <link
-        href="assets/vendor/fontawesome-free/css/all.min.css"
-        rel="stylesheet" />
-      <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-      <link
-        href="assets/vendor/glightbox/css/glightbox.min.css"
-        rel="stylesheet" />
-      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-  
-      <!-- Template Main CSS File -->
-      <link href="assets/css/main.css" rel="stylesheet" />
-</head>
-<body>
-    <div style="text-align: center; padding: 50px;">
-        <h1>ERROR 404</h1>
-        <p>La pagina que estas buscando no ha sido encontrada</p>
-        <a href="https://okos.com.ar/">Volver al Inicio</a>
-    </div>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Página no encontrada - Okos Automatización</title>
+    <meta name="robots" content="noindex" />
 
-    <!-- <section id="contact" class="contact section-white">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/favicon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img
+            class="logo-image logo-original"
+            src="./assets/img/img/LogoOKOSALTA.png"
+            alt="Okos Automatización"
+            width="199"
+            height="60"
+          />
+          <img
+            class="logo-image logo-alternate"
+            src="./assets/img/img/LogoOKOSALTA.png"
+            alt="Okos Automatización"
+          />
+        </a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <section class="state-page">
+        <div class="state-card" data-aos="fade-up">
+          <div class="state-icon">
+            <i class="bi bi-signpost-split"></i>
+          </div>
+          <h1>Error 404</h1>
+          <p>La página que estás buscando no ha sido encontrada.</p>
+          <p>Puede que el enlace esté roto o que la página haya sido movida.</p>
+          <a href="index.html" class="btn-contact">Volver al inicio</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="footer-content text-center">
         <div class="container">
-          <div class="row justify-content-between gy-4">
-            <div class="col-lg-6 d-flex align-items-center" >
-              <div class="content">
-                <h3>
-                  Para obtener mayor información y asesoramiento sobre nuestros
-                  servicios no dude en escribirnos y nos pondremos en contacto a
-                  la brevedad.
-                </h3>
-              </div>
-            </div>
+          <div class="row">
+            <div class="footer-info">
+              <img
+                class="logo-image-footer"
+                src="./assets/img/img/LogoOKOSALTA.png"
+                height="60"
+                width="199"
+                alt="Original Logo"
+              />
 
-            <div class="col-lg-5">
-              <form
-                action="forms/send.php"
-                method="POST"
-                class="php-email-form">
-                <h3>Mandanos un mensaje</h3>
-
-                <div class="row gy-3">
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Nombre / Empresa"
-                      required />
-                  </div>
-
-                  <div class="col-md-12">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Email"
-                      required />
-                  </div>
-
-                  <div class="col-md-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="6"
-                      placeholder="Mensaje"
-                      required></textarea>
-                  </div>
-
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Cargando</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Mensaje Enviado satisfactoriamente. Gracias!
-                    </div>
-
-                    <button type="submit">Enviar</button>
-                  </div>
-                </div>
-              </form>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>
+                <a href="https://maps.app.goo.gl/mPhNmVVgUizWoMnGA" target="_blank">Martiniano Leguizamón 410, C1408GWJ</a>
+                <br />
+                CABA, Argentina.<br />
+                Cuit: 30-71827097-5<br />
+                Phone:
+                <a
+                  href="https://api.whatsapp.com/send?l=es&amp;text=Hola%20Okos!%20Quiero%20consultarles%20por%20un%20presupuesto&amp;phone=+5491169243065"
+                  target="_blank"
+                  >+54 (11) 6924-3065</a
+                ><br />
+                Email:
+                <a href="mailto:info@okos.com.ar">info@okos.com.ar</a><br />
+              </p>
             </div>
           </div>
         </div>
-      </section> -->
-</body>
+      </div>
+      <hr style="margin-left: 8px" />
+      <div class="footer-legal text-center position-relative">
+        <div class="container">
+          <div class="copyright" id="copyright"></div>
+          <br />
+          <div class="credits">
+            <a href="https://www.raven3.com.ar">by <strong>Raven3</strong></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      aria-label="Back to the top of the page"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        var currentYear = new Date().getFullYear();
+        document.getElementById("copyright").innerHTML =
+          currentYear +
+          ` © Copyright <span style="font-family: myfont">OKOS</span>. Todos los derechos reservados. Argentina, Buenos Aires.`;
+        AOS.init({ duration: 800, easing: "slide", once: true, mirror: false });
+        document.querySelectorAll(".mobile-nav-toggle").forEach((el) => {
+          el.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.querySelector("body").classList.toggle("mobile-nav-active");
+            document.querySelector(".mobile-nav-show").classList.toggle("d-none");
+            document.querySelector(".mobile-nav-hide").classList.toggle("d-none");
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
