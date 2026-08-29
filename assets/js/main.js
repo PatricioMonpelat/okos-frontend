@@ -11,11 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
    * Clients Slider
    */
   new Swiper(".clients-slider", {
-    speed: 1000,
+    speed: 6000,
     loop: true,
+    allowTouchMove: false,
     autoplay: {
-      delay: 3000,
+      delay: 1,
       disableOnInteraction: false,
+      pauseOnMouseEnter: false,
     },
     slidesPerView: "auto",
     pagination: {
@@ -72,11 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   new Swiper(".project-slider", {
-    speed: 1000,
+    speed: 6000,
     loop: true,
+    allowTouchMove: false,
     autoplay: {
-      delay: 3000,
+      delay: 1,
       disableOnInteraction: false,
+      pauseOnMouseEnter: false,
       reverseDirection: true,
     },
     slidesPerView: "auto",
